@@ -1,9 +1,19 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC **Books**: Use Case "bookstore"
+
+-- COMMAND ----------
+
 -- MAGIC %md-sandbox
 -- MAGIC 
 -- MAGIC <div  style="text-align: center; line-height: 0; padding-top: 9px;">
 -- MAGIC   <img src="https://dalhussein.blob.core.windows.net/course-resources/bookstore_schema.png" alt="Databricks Learning" style="width: 600">
 -- MAGIC </div>
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC * The Next Command will run the Notebook "Copy-Dataset" from Includes, This one is going to created the Datasets Requiered for this exercise
 
 -- COMMAND ----------
 

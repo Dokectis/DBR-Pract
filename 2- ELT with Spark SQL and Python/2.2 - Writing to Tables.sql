@@ -38,6 +38,11 @@ DESCRIBE HISTORY orders
 
 -- COMMAND ----------
 
+-- MAGIC %md
+-- MAGIC The Next one will fail, This is to check how works the insert overwrite with the previus condictiones up.
+
+-- COMMAND ----------
+
 INSERT OVERWRITE orders
 SELECT *, current_timestamp() FROM parquet.`${dataset.bookstore}/orders`
 
