@@ -90,7 +90,3 @@ SELECT * FROM employees
 -- COMMAND ----------
 
 -- MAGIC %fs ls 'dbfs:/user/hive/warehouse/employees'
-
--- COMMAND ----------
-
-

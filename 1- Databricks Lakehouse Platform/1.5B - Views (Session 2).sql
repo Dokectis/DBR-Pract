@@ -1,4 +1,10 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC **1.5B - Views (Session 2)**
+-- MAGIC To validated if the Global Temp view from Previus .. Exist?
+
+-- COMMAND ----------
+
 SHOW TABLES;
 
 -- COMMAND ----------

@@ -1,4 +1,39 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC * **Views** : Logical Query against source tables, Not Physical data
+-- MAGIC 
+-- MAGIC    * * -*Type of Views*: Stored(Views) - ,
+-- MAGIC                       Temporary Views,
+-- MAGIC                       Global Temporary views
+-- MAGIC * **CTAS** 
+-- MAGIC       ** Filtering and renaming Columns
+-- MAGIC       
+-- MAGIC       
+-- MAGIC       
+-- MAGIC       
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC **Views Comparison:**
+-- MAGIC 
+-- MAGIC | Views(Stored)    | Temp Views    | Global Temp Views |
+-- MAGIC | -----------------| :-------------:| -----:            |
+-- MAGIC | Persisted in DB  | session-Scoped | Cluster-Scoped    |
+-- MAGIC | Dropped only by  DROP VIEW | Droppped when sessions ends      |   Dropped when Cluster Restarted |
+-- MAGIC | created View    | Create Temp View   |  Create Global Temp View|
+-- MAGIC 
+-- MAGIC There must be at least 3 dashes separating each header cell.
+-- MAGIC The outer pipes (|) are optional, and you don't need to make the 
+-- MAGIC raw Markdown line up prettily. You can also use inline Markdown.
+-- MAGIC 
+-- MAGIC Markdown | Less | Pretty
+-- MAGIC --- | --- | ---
+-- MAGIC *Still* | `renders` | **nicely**
+-- MAGIC 1 | 2 | 3
+
+-- COMMAND ----------
+
 CREATE TABLE IF NOT EXISTS smartphones
 (id INT, name STRING, brand STRING, year INT);
 
@@ -17,6 +52,10 @@ VALUES (1, 'iPhone 14', 'Apple', 2022),
 -- COMMAND ----------
 
 SHOW TABLES
+
+-- COMMAND ----------
+
+-- drop view view_apple_phones
 
 -- COMMAND ----------
 

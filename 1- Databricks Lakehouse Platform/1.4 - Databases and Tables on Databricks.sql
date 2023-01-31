@@ -1,4 +1,13 @@
 -- Databricks notebook source
+-- MAGIC %md
+-- MAGIC **Databases ,Tables and Schemas**
+
+-- COMMAND ----------
+
+drop table managed_default;
+
+-- COMMAND ----------
+
 CREATE TABLE managed_default
   (width INT, length INT, height INT);
 
@@ -137,4 +146,6 @@ DROP TABLE external_custom;
 
 -- COMMAND ----------
 
-
+-- MAGIC %md
+-- MAGIC End of the hands-on on 1.4
+-- MAGIC ca
