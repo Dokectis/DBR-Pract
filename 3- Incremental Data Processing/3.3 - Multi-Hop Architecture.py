@@ -149,4 +149,5 @@ for s in spark.streams.active:
 
 # COMMAND ----------
 
-
+# MAGIC %md
+# MAGIC End of Section

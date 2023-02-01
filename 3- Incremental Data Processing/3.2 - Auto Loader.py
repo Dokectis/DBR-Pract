@@ -11,8 +11,18 @@
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC We Are ingestion new data , that already exist on Parquet File Execute the next command to evaluated and see the file
+
+# COMMAND ----------
+
 files = dbutils.fs.ls(f"{dataset_bookstore}/orders-raw")
 display(files)
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Auto Loader structure to use:
 
 # COMMAND ----------
 
@@ -38,6 +48,11 @@ display(files)
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC Going to landing new data into the raw data, so With can simulate the "New data" and them, Process it as a new data, Everything time to load Data, I will Create a new parquet File
+
+# COMMAND ----------
+
 load_new_data()
 
 # COMMAND ----------
@@ -53,6 +68,7 @@ display(files)
 # COMMAND ----------
 
 # MAGIC %sql
+# MAGIC -- Explore new table history
 # MAGIC DESCRIBE HISTORY orders_updates
 
 # COMMAND ----------
