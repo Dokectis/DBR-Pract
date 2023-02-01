@@ -15,6 +15,10 @@ SELECT * FROM orders
 
 -- COMMAND ----------
 
+DESCRIBE orders
+
+-- COMMAND ----------
+
 SELECT
   order_id,
   books,
@@ -41,6 +45,12 @@ SELECT
     b -> CAST(b.subtotal * 0.8 AS INT)
   ) AS subtotal_after_discount
 FROM orders;
+
+-- COMMAND ----------
+
+-- MAGIC %md
+-- MAGIC **User Define Function:**
+-- MAGIC How to works and create one UDF and How to use id
 
 -- COMMAND ----------
 
@@ -75,6 +85,11 @@ RETURN CASE
 
 -- COMMAND ----------
 
+-- MAGIC %md
+-- MAGIC Apply the UDf on our Customer table
+
+-- COMMAND ----------
+
 SELECT email, site_type(email) as domain_category
 FROM customers
 
@@ -85,4 +100,4 @@ DROP FUNCTION site_type;
 
 -- COMMAND ----------
 
-
+-- MAGIC %md End Chapter

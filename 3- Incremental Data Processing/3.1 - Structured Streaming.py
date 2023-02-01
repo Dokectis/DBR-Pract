@@ -30,6 +30,11 @@
 
 # COMMAND ----------
 
+# MAGIC %md
+# MAGIC The Next query will failed, That is because is a restriction to use it as "Sorting is not supported on streaming DataFrames/Datasets"
+
+# COMMAND ----------
+
 # MAGIC %sql
 # MAGIC  SELECT * 
 # MAGIC  FROM books_streaming_tmp_vw
@@ -59,6 +64,11 @@
 # MAGIC %sql
 # MAGIC SELECT *
 # MAGIC FROM author_counts
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC Point of Check: After run the firts time the query , in the second time, the Stream is will be cheking if there is a new data, So, After insert new data into the Table "Books" The Streaming will be procees the batch and update the end table.
 
 # COMMAND ----------
 
